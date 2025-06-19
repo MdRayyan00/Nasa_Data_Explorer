@@ -1,0 +1,63 @@
+# Root .gitignore for Bounce-Insights
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+build/
+dist/
+coverage/
+.nyc_output/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+.pnp
+.pnp.js
+
+# React specific
+*.local
+*.cache
+*.log
+
+# Optional: Ignore test coverage output
+/coverage
+
+# Optional: Ignore production build output
+/frontend/build
+/backend/build
+
+# Optional: Ignore backend runtime files
+/backend/.env
+/backend/.env.*
+
+# Optional: Ignore frontend runtime files
+/frontend/.env
+/frontend/.env.*
+
+# Ignore lock files if you use only one package manager
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
