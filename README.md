@@ -1,4 +1,4 @@
-# Bounce Insights
+# Nasa Data Explorer
 
 A full-stack NASA data explorer built with React and Express.
 
