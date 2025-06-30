@@ -13,10 +13,12 @@ app.use('/api/nasa', nasaRoutes);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, '../frontend/build')));
+// Use absolute path for serving frontend build (works in Docker/Render)
+const buildPath = path.resolve(__dirname, '../frontend/build');
+app.use(express.static(buildPath));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+  res.sendFile(path.join(buildPath, 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
