@@ -20,8 +20,9 @@ A full-stack NASA data explorer built with React and Express.
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/yourusername/bounce-insights.git
-   cd bounce-insights
+   git clone https://github.com/MdRayyan00/Nasa_Data_Explorer.git
+   cd Nasa_Data_Explorer
+
    ```
 
 2. **Create a `.env` file for the backend**
@@ -35,13 +36,15 @@ A full-stack NASA data explorer built with React and Express.
 3. **Build the Docker image**
 
    ```sh
-   docker build -t bounce-insights .
+   docker build -t Nasa_Data_Explorer
+ .
    ```
 
 4. **Run the Docker container**
 
    ```sh
-   docker run -p 5000:5000 --env-file backend/.env bounce-insights
+   docker run -p 5000:5000 --env-file backend/.env Nasa_Data_Explorer
+
    ```
 
 5. **Open your browser**
